@@ -15,6 +15,9 @@ The Datasets folder must be in the same directory of the `.py` files
 The best example of the code is viewed conveniently from your web browser here:
 
 https://github.com/e-ramos/738Project1/blob/master/Notebooks/Simple1DFinal.ipynb
+
+Scroll through to view results
+
 # The Tools of the Trade
 The goals of this project were somewhat vague and open ended. This is not critique, but praise. There is hardly a better way to learn than to be forced to grapple with ambiguity and refine your own approach. (read: do the easiest thing possible)
 
@@ -28,8 +31,8 @@ This is, of course, predicated by the more mundane:
 Before we can make decisions about some system, we must understand its mechanics; or at the least pretend we do. We call this delusion a *model*. 
 
 ## Modeling Data with the GMM
-A probability distribution most are familiar with is the Gaussian or *normal* pdf. With the central limit theorem in our back pockets, it makes sense to model a large observed dataset with a aussian. But why stop there? 
-It's helpful to model our data as the sum of many aussians to more closely approximate the observed distribution with sub-infinite sample support. We call this the Gaussian Mixture Model. It is basically a "method of moments" type approach using the aussian as a basis function since its integral can be calculated and its defined by only two parameters.
+A probability distribution most are familiar with is the Gaussian or *normal* pdf. With the central limit theorem in our back pockets, it makes sense to model a large observed dataset with a gaussian. But why stop there? 
+It's helpful to model our data as the sum of many gaussians to more closely approximate the observed distribution with sub-infinite sample support. We call this the Gaussian Mixture Model. It is basically a "method of moments" type approach using the gaussian as a basis function since its integral can be calculated and its defined by only two parameters.
 
 ## Expectation Maximization
 The code given is a one dimensional application of the well known Expectation Maximization algorithm. 
@@ -46,7 +49,7 @@ Using these probabilities and applying them as weights to the data, find new mea
  - [x] Iterate
  
  ## Model Order Estimation
- There are more intelligent methods of determining if a model fits well, but I applied a naive exhaustive search over the space K ={1, 2,...10}. Where K is the number of gaussians for 2K total parameters to estimate.
+ There are more intelligent methods of determining if a model fits well, but I applied a naive exhaustive search over the space K ={1, 2,...10}. Where K is the number two gaussians ad infinitum for 2K total parameters to estimate.
  
 To determine "goodness" of fit, I used the Bayesian Information Criterion (BIC) to penalize each additional parameter.
 
@@ -64,5 +67,5 @@ BIC has a seemingly ad-hoc nature to it, and I found that, visually, models look
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDAxNjg5MjddfQ==
+eyJoaXN0b3J5IjpbLTE2OTg5NTAwNjNdfQ==
 -->
