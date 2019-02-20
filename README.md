@@ -28,8 +28,8 @@ This is, of course, predicated by the more mundane:
 Before we can make decisions about some system, we must understand its mechanics; or at the least pretend we do. We call this delusion a *model*. 
 
 ## Modeling Data with the GMM
-A probability distribution most are familiar with is the Gaussian or *normal* pdf. With the central limit theorem in our back pockets, it makes sense to model a large observed dataset with a Gaussian. But why stop there? 
-It's helpful to model our data as the sum of many Gaussians to more closely approximate the observed distribution with sub-infinite sample support. We call this the Gaussian Mixture Model. It is basically a "method of moments" type approach using the Gaussian as a basis function since its integral can be calculated and its defined by only two parameters.
+A probability distribution most are familiar with is the Gaussian or *normal* pdf. With the central limit theorem in our back pockets, it makes sense to model a large observed dataset with a aussian. But why stop there? 
+It's helpful to model our data as the sum of many aussians to more closely approximate the observed distribution with sub-infinite sample support. We call this the Gaussian Mixture Model. It is basically a "method of moments" type approach using the aussian as a basis function since its integral can be calculated and its defined by only two parameters.
 
 ## Expectation Maximization
 The code given is a one dimensional application of the well known Expectation Maximization algorithm. 
@@ -63,3 +63,6 @@ BIC has a seemingly ad-hoc nature to it, and I found that, visually, models look
 ![k=2 Fit](https://github.com/e-ramos/738Project1/blob/master/Results/Cars/Final2.png)
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NDAxNjg5MjddfQ==
+-->
