@@ -32,7 +32,7 @@ Before we can make decisions about some system, we must understand its mechanics
 
 ## Modeling Data with the GMM
 A probability distribution most are familiar with is the Gaussian or *normal* pdf. With the central limit theorem in our back pockets, it makes sense to model a large observed dataset with a gaussian. But why stop there? 
-It's helpful to model our data as the sum of many gaussians to more closely approximate the observed distribution with sub-infinite sample support. We call this the Gaussian Mixture Model. It is basically a "method of moments" type approach using the gaussian as a basis function since its integral can be calculated and its defined by only two parameters.
+It's helpful to model our data as the sum of many gaussians to more closely approximate the observed distribution with sub-infinite sample support. We call this the Gaussian Mixture Model. It is basically a "method of moments" type approach using the gaussian as a basis function since its integral can be calculated (approximately) and its defined by only two parameters.
 
 ## Expectation Maximization
 The code given is a one dimensional application of the well known Expectation Maximization algorithm. 
