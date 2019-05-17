@@ -1,4 +1,4 @@
-﻿# EECS 738 Project 1: Distribution Fitting
+﻿# Exploration in Distribution Fitting
 By Alex Ramos
 
 # Files
